@@ -24,9 +24,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/configure-pages@v5
+      - uses: actions/github-script@v7
+        id: enable-pages
         with:
-          enablement: trusted
+          script: |
+            try {
+              await github.rest.pages.getPages({ owner: context.repo.owner, repo: context.repo.repo });
+            } catch {
+              await github.rest.pages.createPages({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                build_type: "workflow"
+              });
+            }
+      - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
           path: .
