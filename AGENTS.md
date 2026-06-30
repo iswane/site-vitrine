@@ -10,14 +10,12 @@ No build, test, lint, or dev server commands exist. Open the file directly:
 open index.html
 ```
 
-To push to GitHub Pages (one-time setup):
+To deploy to GitHub Pages (one-time setup in repo Settings):
+- Settings > Pages > Source: **Deploy from a branch**
+- Branch: **gh-pages** / **/(root)**
+- Click **Save**
 
-```bash
-gh repo create site-vitrine --public --push --remote origin
-# Then enable GitHub Pages in repo Settings > Pages > Source: GitHub Actions
-```
-
-After that, every push to `main` auto-deploys via `.github/workflows/deploy.yml`.
+After that, every push to `main` auto-deploys via `.github/workflows/deploy.yml` (peaceiris/actions-gh-pages pushes to `gh-pages` branch).
 
 ## Project structure
 
@@ -37,4 +35,4 @@ After that, every push to `main` auto-deploys via `.github/workflows/deploy.yml`
 - Footer notes that Astro + Tailwind would be the intended production tech stack.
 - Responsive breakpoints at 980px and 680px (mobile-first).
 - Skip-link to `#main` for accessibility.
-- Repo is `abdoulayewane.github.io/site-vitrine` (update canonical URLs in `index.html`, `robots.txt`, `sitemap.xml`, `404.html` if forking).
+- Repo is `iswane.github.io/site-vitrine` (update canonical URLs in `index.html`, `robots.txt`, `sitemap.xml`, `404.html` if forking).
