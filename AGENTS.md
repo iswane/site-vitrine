@@ -1,6 +1,6 @@
 # AGENTS.md — site-vitrine
 
-A single-file HTML site for "Nova Infra", a French B2B landing page for digital transformation, cybersecurity, cloud, and energy services. Ready for GitHub Pages deployment.
+A single-file HTML site for "Sunulink Telecom", a French B2B landing page for telecom services (fibre, mobile, data center, VPN). Ready for GitHub Pages deployment.
 
 ## Commands
 
