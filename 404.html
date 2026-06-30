@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — Page non trouvée | Nova Infra</title>
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=zodiak@400,500,700&display=swap" rel="stylesheet">
+  <style>
+    :root { --color-bg: #f7f6f2; --color-text: #28251d; --color-text-muted: #6b6a65; --color-primary: #0d6b6e; --font-body: 'General Sans', Inter, sans-serif; --font-display: 'Zodiak', Georgia, serif; --content: min(1180px, calc(100vw - 2rem)); }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      background: var(--color-bg); color: var(--color-text);
+      font-family: var(--font-body); text-align: center; padding: 2rem;
+    }
+    .container { width: var(--content); max-width: 480px; }
+    h1 { font-family: var(--font-display); font-size: clamp(4rem, 10vw, 7rem); margin: 0; line-height: 1; color: var(--color-primary); }
+    p { color: var(--color-text-muted); font-size: 1.125rem; margin: .5rem 0 2rem; }
+    a {
+      display: inline-flex; align-items: center; gap: .6rem;
+      padding: .75rem 1.5rem; border-radius: 999px;
+      background: var(--color-primary); color: white;
+      text-decoration: none; font-weight: 600; font-size: .95rem;
+      border: 1px solid transparent; transition: .2s ease;
+    }
+    a:hover { opacity: .9; transform: translateY(-1px); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>404</h1>
+    <p>Cette page n'existe pas ou a été déplacée.</p>
+    <a href="/site-vitrine/">← Retour à l'accueil</a>
+  </div>
+</body>
+</html>

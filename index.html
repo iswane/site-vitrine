@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nova Infra — Transformation digitale, Cybersécurité, Cloud &amp; Énergie</title>
+  <meta name="description" content="Nova Infra accompagne les organisations dans leur transformation digitale, cybersécurité, cloud et innovation énergétique. Expertise B2B, support 24/7." />
+  <meta property="og:title" content="Nova Infra — Transformation digitale, Cybersécurité, Cloud &amp; Énergie" />
+  <meta property="og:description" content="Expert B2B en transformation digitale, cybersécurité, cloud et innovation énergétique." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://abdoulayewane.github.io/site-vitrine/" />
+  <meta name="theme-color" content="#f7f6f2" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#171614" media="(prefers-color-scheme: dark)" />
+  <link rel="canonical" href="https://abdoulayewane.github.io/site-vitrine/" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230d6b6e'><path d='M5 16.5 12 4l7 12.5'/><circle cx='12' cy='16.5' r='1.5'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&f[]=zodiak@400,500,700&display=swap" rel="stylesheet">
+  <style>
+    :root, [data-theme="light"] {
+      --color-bg: #f7f6f2;
+      --color-surface: #fbfaf7;
+      --color-surface-2: #f0ede7;
+      --color-surface-offset: #e9e4dc;
+      --color-border: rgba(40,37,29,.12);
+      --color-text: #28251d;
+      --color-text-muted: #6b6a65;
+      --color-text-faint: #96948d;
+      --color-text-inverse: #f8f8f4;
+      --color-primary: #0d6b6e;
+      --color-primary-hover: #0a5658;
+      --color-primary-soft: rgba(13,107,110,.10);
+      --color-highlight: #dce9e8;
+      --shadow-sm: 0 8px 24px rgba(26, 26, 20, 0.05);
+      --shadow-lg: 0 24px 80px rgba(26, 26, 20, 0.10);
+      --radius-sm: 12px;
+      --radius-md: 18px;
+      --radius-lg: 28px;
+      --space-2: .5rem;
+      --space-3: .75rem;
+      --space-4: 1rem;
+      --space-5: 1.25rem;
+      --space-6: 1.5rem;
+      --space-8: 2rem;
+      --space-10: 2.5rem;
+      --space-12: 3rem;
+      --space-16: 4rem;
+      --space-20: 5rem;
+      --text-xs: clamp(.75rem,.7rem + .2vw,.875rem);
+      --text-sm: clamp(.875rem,.82rem + .25vw,1rem);
+      --text-base: clamp(1rem,.96rem + .2vw,1.125rem);
+      --text-lg: clamp(1.125rem,1rem + .6vw,1.5rem);
+      --text-xl: clamp(1.5rem,1.15rem + 1vw,2.2rem);
+      --text-2xl: clamp(2.2rem,1.3rem + 2.4vw,4.6rem);
+      --content: min(1180px, calc(100vw - 2rem));
+      --font-body: 'General Sans', Inter, sans-serif;
+      --font-display: 'Zodiak', Georgia, serif;
+    }
+    [data-theme="dark"] {
+      --color-bg: #171614;
+      --color-surface: #1f1d1b;
+      --color-surface-2: #252320;
+      --color-surface-offset: #2d2a27;
+      --color-border: rgba(255,255,255,.10);
+      --color-text: #ece7de;
+      --color-text-muted: #b1aba1;
+      --color-text-faint: #827d75;
+      --color-text-inverse: #171614;
+      --color-primary: #69aeb2;
+      --color-primary-hover: #8ac1c4;
+      --color-primary-soft: rgba(105,174,178,.14);
+      --color-highlight: rgba(105,174,178,.14);
+      --shadow-sm: 0 10px 30px rgba(0,0,0,.20);
+      --shadow-lg: 0 30px 100px rgba(0,0,0,.35);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--color-bg);
+      color: var(--color-text);
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    a { color: inherit; text-decoration: none; }
+    img, svg { display:block; max-width:100%; }
+    button { font: inherit; }
+    .container { width: var(--content); margin: 0 auto; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: .55rem;
+      padding: .55rem .9rem;
+      border-radius: 999px;
+      background: var(--color-primary-soft);
+      color: var(--color-primary);
+      font-size: var(--text-xs);
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-weight: 700;
+    }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(16px);
+      background: color-mix(in srgb, var(--color-bg) 85%, transparent);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .site-header__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      min-height: 76px;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: .85rem;
+      font-weight: 700;
+      letter-spacing: -.03em;
+    }
+    .brand-mark {
+      width: 40px;
+      height: 40px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(180deg, var(--color-primary), color-mix(in srgb, var(--color-primary) 78%, black));
+      color: white;
+      box-shadow: var(--shadow-sm);
+    }
+    .brand-mark svg { width: 24px; height: 24px; }
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 1.4rem;
+      color: var(--color-text-muted);
+      font-size: var(--text-sm);
+    }
+    .header-actions { display:flex; align-items:center; gap:.75rem; }
+    .theme-toggle, .btn, .btn-secondary {
+      min-height: 44px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      transition: .2s ease;
+    }
+    .theme-toggle {
+      width: 44px;
+      background: var(--color-surface);
+      border-color: var(--color-border);
+      color: var(--color-text);
+      display:grid;
+      place-items:center;
+      cursor:pointer;
+    }
+    .btn, .btn-secondary {
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:.6rem;
+      padding: 0 1.1rem;
+      font-size: var(--text-sm);
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .btn {
+      background: var(--color-primary);
+      color: var(--color-text-inverse);
+      box-shadow: var(--shadow-sm);
+    }
+    .btn:hover { background: var(--color-primary-hover); transform: translateY(-1px); }
+    .btn-secondary {
+      background: var(--color-surface);
+      color: var(--color-text);
+      border-color: var(--color-border);
+    }
+    .hero {
+      padding: clamp(3rem, 5vw, 6rem) 0 2rem;
+    }
+    .hero-grid {
+      display:grid;
+      grid-template-columns: 1.2fr .9fr;
+      gap: clamp(1.5rem, 4vw, 4rem);
+      align-items: end;
+    }
+    .hero-copy h1 {
+      margin: 1rem 0 1.25rem;
+      font-family: var(--font-display);
+      font-size: var(--text-2xl);
+      line-height: .98;
+      letter-spacing: -.04em;
+      max-width: 12ch;
+    }
+    .hero-copy p {
+      margin: 0 0 1.5rem;
+      max-width: 58ch;
+      color: var(--color-text-muted);
+    }
+    .cta-row {
+      display:flex;
+      flex-wrap:wrap;
+      gap:.75rem;
+      margin-bottom: 2rem;
+    }
+    .stats {
+      display:grid;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      gap: .9rem;
+    }
+    .stat {
+      padding: 1rem;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+    }
+    .stat strong {
+      display:block;
+      font-size: clamp(1.2rem, 1rem + 1vw, 2rem);
+      letter-spacing: -.04em;
+    }
+    .stat span { color: var(--color-text-muted); font-size: var(--text-sm); }
+    .hero-panel {
+      position: relative;
+      min-height: 580px;
+      border-radius: 32px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(13,107,110,.18), transparent 28%),
+        radial-gradient(circle at 80% 15%, rgba(13,107,110,.10), transparent 24%),
+        linear-gradient(180deg, var(--color-surface), var(--color-surface-2));
+      border: 1px solid var(--color-border);
+      box-shadow: var(--shadow-lg);
+      padding: 1.4rem;
+      display:flex;
+      align-items:flex-end;
+    }
+    .panel-card {
+      width: 100%;
+      background: color-mix(in srgb, var(--color-bg) 72%, transparent);
+      border: 1px solid var(--color-border);
+      border-radius: 24px;
+      padding: 1.2rem;
+      backdrop-filter: blur(16px);
+    }
+    .panel-top {
+      display:flex;
+      justify-content:space-between;
+      gap:1rem;
+      margin-bottom: 1rem;
+      color: var(--color-text-muted);
+      font-size: var(--text-sm);
+    }
+    .signal-bars {
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap:.5rem;
+      align-items:end;
+      height: 110px;
+      margin: 1rem 0 1.2rem;
+    }
+    .signal-bars span {
+      display:block;
+      border-radius: 999px;
+      background: linear-gradient(180deg, var(--color-primary), color-mix(in srgb, var(--color-primary) 35%, transparent));
+    }
+    .signal-bars span:nth-child(1){height:38%;}
+    .signal-bars span:nth-child(2){height:56%;}
+    .signal-bars span:nth-child(3){height:82%;}
+    .signal-bars span:nth-child(4){height:100%;}
+    section {
+      padding: clamp(3rem, 7vw, 7rem) 0;
+    }
+    .section-head {
+      display:grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      align-items:end;
+    }
+    h2 {
+      margin: .8rem 0 0;
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 1.3rem + 1.8vw, 3.4rem);
+      line-height: 1;
+      letter-spacing: -.04em;
+    }
+    .section-head p { color: var(--color-text-muted); max-width: 60ch; }
+    .services-grid {
+      display:grid;
+      grid-template-columns: 1.1fr .9fr .9fr;
+      gap: 1rem;
+    }
+    .card {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 1.35rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .card.featured {
+      background: linear-gradient(180deg, color-mix(in srgb, var(--color-primary-soft) 55%, var(--color-surface)), var(--color-surface));
+      min-height: 100%;
+    }
+    .card small {
+      color: var(--color-primary);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-size: .74rem;
+    }
+    .card h3 {
+      margin: .9rem 0 .75rem;
+      font-size: var(--text-lg);
+      line-height: 1.15;
+      letter-spacing: -.03em;
+    }
+    .card p { color: var(--color-text-muted); margin: 0 0 1rem; }
+    .bullet-list {
+      display:grid;
+      gap:.75rem;
+      color: var(--color-text-muted);
+      font-size: var(--text-sm);
+    }
+    .bullet-list span::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      display:inline-block;
+      margin-right: .65rem;
+      background: var(--color-primary);
+      transform: translateY(-1px);
+    }
+    .trust-band {
+      background: var(--color-surface);
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+    }
+    .trust-grid {
+      display:grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1rem;
+      align-items:center;
+      padding: 1.1rem 0;
+      color: var(--color-text-muted);
+      font-size: var(--text-sm);
+    }
+    .trust-grid div {
+      border-right: 1px solid var(--color-border);
+      padding-right: 1rem;
+      min-height: 40px;
+      display:flex;
+      align-items:center;
+    }
+    .trust-grid div:last-child { border-right: 0; }
+    .proof-grid {
+      display:grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 1rem;
+    }
+    .case-card {
+      min-height: 420px;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      background:
+        linear-gradient(180deg, rgba(13,107,110,.06), transparent 40%),
+        var(--color-surface);
+    }
+    .impact {
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: .8rem;
+      margin-top: 1.5rem;
+    }
+    .impact .mini {
+      padding: 1rem;
+      border-radius: 20px;
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
+    }
+    .sectors {
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+    }
+    .sector {
+      padding: 1.1rem;
+      border-radius: 24px;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+    }
+    .cta-block {
+      background: linear-gradient(135deg, color-mix(in srgb, var(--color-primary-soft) 85%, var(--color-surface)) 0%, var(--color-surface) 65%);
+      border: 1px solid var(--color-border);
+      border-radius: 32px;
+      padding: clamp(1.5rem, 4vw, 3rem);
+      box-shadow: var(--shadow-lg);
+      display:grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 1.5rem;
+      align-items:end;
+    }
+    .form-shell {
+      background: color-mix(in srgb, var(--color-bg) 74%, transparent);
+      border: 1px solid var(--color-border);
+      border-radius: 24px;
+      padding: 1rem;
+    }
+    .form-shell label {
+      display:block;
+      font-size: var(--text-sm);
+      margin-bottom:.3rem;
+      color: var(--color-text-muted);
+    }
+    .form-shell input, .form-shell textarea {
+      width:100%;
+      border: 1px solid var(--color-border);
+      background: var(--color-surface);
+      color: var(--color-text);
+      border-radius: 16px;
+      padding: .95rem 1rem;
+      margin-bottom: .85rem;
+      outline: none;
+    }
+    .form-shell textarea { min-height: 120px; resize: vertical; }
+    .site-footer {
+      padding: 2rem 0 3rem;
+      color: var(--color-text-muted);
+      font-size: var(--text-sm);
+    }
+    .footer-row {
+      display:flex;
+      justify-content:space-between;
+      gap: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--color-border);
+    }
+    @media (max-width: 980px) {
+      .nav { display:none; }
+      .hero-grid,
+      .section-head,
+      .services-grid,
+      .proof-grid,
+      .cta-block { grid-template-columns: 1fr; }
+      .trust-grid { grid-template-columns: 1fr 1fr; }
+      .sectors { grid-template-columns: 1fr 1fr; }
+      .hero-panel { min-height: 420px; }
+    }
+    @media (max-width: 680px) {
+      .site-header__inner { min-height: 70px; }
+      .header-actions .btn-secondary { display:none; }
+      .stats,
+      .impact,
+      .trust-grid,
+      .sectors { grid-template-columns: 1fr; }
+      .hero { padding-top: 2rem; }
+      .hero-copy h1 { max-width: 11ch; }
+      .cta-row { flex-direction: column; }
+      .btn, .btn-secondary { width: 100%; }
+      .footer-row { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" style="position:absolute;left:-9999px;top:auto;">Aller au contenu</a>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="#hero" aria-label="Accueil Nova Infra">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M5 16.5 12 4l7 12.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8.5 16.5h7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <circle cx="12" cy="16.5" r="1.5" fill="currentColor"/>
+          </svg>
+        </span>
+        <span>Nova Infra</span>
+      </a>
+      <nav class="nav" aria-label="Navigation principale">
+        <a href="#offres">Offres</a>
+        <a href="#impact">Références</a>
+        <a href="#secteurs">Secteurs</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="theme-toggle" data-theme-toggle aria-label="Basculer le thème">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="#contact" class="btn-secondary">Parler à un expert</a>
+        <a href="#offres" class="btn">Découvrir</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Transformation digitale · cybersécurité · cloud</span>
+          <h1>Une vitrine plus premium pour une ambition numérique plus claire.</h1>
+          <p>Un positionnement institutionnel fort, modernisé avec une hiérarchie visuelle plus nette, une offre mieux structurée et une expérience beaucoup plus convaincante sur mobile comme sur desktop.</p>
+          <div class="cta-row">
+            <a class="btn" href="#contact">Demander une maquette finale</a>
+            <a class="btn-secondary" href="#impact">Voir les cas d’usage</a>
+          </div>
+          <div class="stats" aria-label="Indicateurs clés">
+            <article class="stat"><strong>12+</strong><span>années d’exécution terrain</span></article>
+            <article class="stat"><strong>150+</strong><span>organisations accompagnées</span></article>
+            <article class="stat"><strong>24/7</strong><span>support et supervision</span></article>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-label="Aperçu visuel du positionnement">
+          <div class="panel-card">
+            <div class="panel-top">
+              <span>Infrastructure · sécurité · énergie</span>
+              <span>Exécution régionale</span>
+            </div>
+            <h3 style="margin:0;font-size:var(--text-xl);line-height:1.05;letter-spacing:-.04em;max-width:13ch;">Une plateforme de confiance pour les organisations qui veulent accélérer sans fragiliser.</h3>
+            <div class="signal-bars" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <p style="margin:0;color:var(--color-text-muted);">Architecture plus propre, preuve sociale plus visible, offre plus lisible, CTA plus forts.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <div class="trust-band" aria-label="Bandeau de confiance">
+      <div class="container trust-grid">
+        <div>Entreprises multi-sites</div>
+        <div>Institutions publiques</div>
+        <div>Projets cloud & réseau</div>
+        <div>Cybersécurité managée</div>
+        <div>Énergie & résilience</div>
+      </div>
+    </div>
+
+    <section id="offres">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Offres structurées</span>
+            <h2>Une offre lisible, pensée pour décider vite.</h2>
+          </div>
+          <p>Au lieu d’empiler des blocs génériques, la page présente des expertises hiérarchisées, avec une carte principale et des entrées plus ciblées. Cela donne un site plus contemporain et plus crédible pour une audience B2B.</p>
+        </div>
+        <div class="services-grid">
+          <article class="card featured">
+            <small>Offre phare</small>
+            <h3>Infrastructure cloud, cybersécurité et connectivité dans une même narration.</h3>
+            <p>Le discours devient plus stratégique: on parle de continuité, de risque, de déploiement, de gouvernance et de performance opérationnelle.</p>
+            <div class="bullet-list">
+              <span>Audit, design d’architecture et migration</span>
+              <span>Opérations sécurisées et supervision continue</span>
+              <span>Accompagnement des équipes et conduite du changement</span>
+            </div>
+          </article>
+          <article class="card">
+            <small>Expertise</small>
+            <h3>Cybersécurité & protection des données</h3>
+            <p>SOC, endpoints, réseau, gouvernance et conformité réunis dans une proposition concise.</p>
+          </article>
+          <article class="card">
+            <small>Expertise</small>
+            <h3>Connectivité, datacenter et innovation énergétique</h3>
+            <p>Une section claire pour montrer la largeur du groupe sans diluer la promesse centrale.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="impact" style="padding-top:0;">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Références et impact</span>
+            <h2>Des preuves visibles au lieu d’un discours seulement institutionnel.</h2>
+          </div>
+          <p>La refonte met davantage l’accent sur les résultats, la transformation des environnements clients et la lecture rapide des bénéfices. C’est ce qui rapproche le site des meilleurs standards B2B actuels.</p>
+        </div>
+        <div class="proof-grid">
+          <article class="card case-card">
+            <div>
+              <small>Cas client mis en avant</small>
+              <h3>Modernisation d’un environnement multi-sites avec sécurisation des flux et meilleure continuité de service.</h3>
+              <p>Le bloc raconte un résultat métier: stabilité, supervision, capacité d’évolution, meilleure résilience et expérience plus homogène pour les équipes.</p>
+            </div>
+            <div class="impact">
+              <div class="mini"><strong>+42%</strong><span style="display:block;color:var(--color-text-muted);font-size:var(--text-sm);">visibilité opérationnelle</span></div>
+              <div class="mini"><strong>-31%</strong><span style="display:block;color:var(--color-text-muted);font-size:var(--text-sm);">incidents critiques</span></div>
+              <div class="mini"><strong>24/7</strong><span style="display:block;color:var(--color-text-muted);font-size:var(--text-sm);">surveillance continue</span></div>
+            </div>
+          </article>
+          <article class="card">
+            <small>Méthode</small>
+            <h3>Pourquoi cette version paraît plus moderne</h3>
+            <div class="bullet-list" style="margin-top:1rem;">
+              <span>Hero plus net avec promesse métier claire</span>
+              <span>Plus de respiration et moins de densité confuse</span>
+              <span>Hiérarchie premium avec typographie éditoriale</span>
+              <span>Preuve sociale plus tôt dans le scroll</span>
+              <span>CTA plus visibles et mieux espacés</span>
+              <span>Responsive mobile-first réellement pensé</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="secteurs">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">Secteurs servis</span>
+            <h2>Un discours adapté aux décideurs, pas seulement aux techniciens.</h2>
+          </div>
+          <p>La page gagne en efficacité quand chaque secteur est associé à une intention claire: sécuriser, moderniser, connecter, réduire les coûts ou accélérer les opérations.</p>
+        </div>
+        <div class="sectors">
+          <article class="sector"><h3>Institutions</h3><p>Résilience, souveraineté, continuité de service.</p></article>
+          <article class="sector"><h3>Grandes entreprises</h3><p>Scalabilité, sécurité, déploiement multi-sites.</p></article>
+          <article class="sector"><h3>PME</h3><p>Industrialisation progressive et ROI rapide.</p></article>
+          <article class="sector"><h3>Industrie & énergie</h3><p>Fiabilité, supervision, performance durable.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="cta-block">
+          <div>
+            <span class="eyebrow">Passer à la version premium</span>
+            <h2>On peut transformer ce concept en vrai site haut de gamme dès maintenant.</h2>
+            <p style="color:var(--color-text-muted);max-width:55ch;">Cette démo pose la direction visuelle. L’étape suivante consiste à produire une version complète avec contenu réel, variantes de sections, maquette Figma ou code Astro/Tailwind prêt à intégrer.</p>
+          </div>
+          <form class="form-shell" action="https://formspree.io/f/your-form-id" method="POST">
+            <label for="name">Nom / entreprise</label>
+            <input id="name" name="name" type="text" placeholder="Ex. Nova Infra" required />
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="contact@entreprise.com" required />
+            <label for="message">Projet</label>
+            <textarea id="message" name="message" placeholder="Refonte du site vitrine, identité, offres, SEO, maquette..." required></textarea>
+            <button type="submit" class="btn" style="width:100%;">Lancer le projet</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>Prototype de direction artistique — responsive mobile & desktop.</span>
+      <span>Astro + Tailwind conviendraient parfaitement pour l’implémentation finale.</span>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const root = document.documentElement;
+      const button = document.querySelector('[data-theme-toggle]');
+      let theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      root.setAttribute('data-theme', theme);
+      const renderIcon = () => {
+        button.innerHTML = theme === 'dark'
+          ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+          : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+      };
+      renderIcon();
+      button.addEventListener('click', () => {
+        theme = theme === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', theme);
+        renderIcon();
+      });
+    })();
+  </script>
+</body>
+</html>
