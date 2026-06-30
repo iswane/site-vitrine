@@ -431,6 +431,25 @@
       outline: none;
     }
     .form-shell textarea { min-height: 120px; resize: vertical; }
+    .card-icon, .trust-icon, .sector-icon, .stat-icon {
+      width: 40px; height: 40px; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      background: var(--color-primary-soft); color: var(--color-primary);
+      flex-shrink: 0;
+    }
+    .card-icon svg, .trust-icon svg, .sector-icon svg, .stat-icon svg { width: 20px; height: 20px; }
+    .card-header { display: flex; align-items: center; gap: .75rem; margin-bottom: .5rem; }
+    .card.featured .card-icon { background: var(--color-primary); color: var(--color-text-inverse); }
+    .trust-item { display: flex; align-items: center; gap: .65rem; }
+    .trust-icon { width: 32px; height: 32px; border-radius: 8px; }
+    .trust-icon svg { width: 16px; height: 16px; }
+    .sector-icon { width: 36px; height: 36px; border-radius: 10px; margin-bottom: .5rem; }
+    .hero-bg-decor {
+      position: absolute; inset: 0; pointer-events: none; overflow: hidden;
+    }
+    .hero-bg-decor svg {
+      position: absolute; width: 100%; height: 100%; opacity: .06;
+    }
     .site-footer {
       padding: 2rem 0 3rem;
       color: var(--color-text-muted);
@@ -511,12 +530,37 @@
             <a class="btn-secondary" href="#offres">Voir nos offres</a>
           </div>
           <div class="stats" aria-label="Indicateurs clés">
-            <article class="stat"><strong>15+</strong><span>ans d’expertise télécom</span></article>
-            <article class="stat"><strong>200+</strong><span>entreprises connectées</span></article>
-            <article class="stat"><strong>99,9%</strong><span>disponibilité réseau</span></article>
+            <article class="stat">
+              <span class="stat-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </span>
+              <strong>15+</strong><span>ans d’expertise télécom</span>
+            </article>
+            <article class="stat">
+              <span class="stat-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </span>
+              <strong>200+</strong><span>entreprises connectées</span>
+            </article>
+            <article class="stat">
+              <span class="stat-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </span>
+              <strong>99,9%</strong><span>disponibilité réseau</span>
+            </article>
           </div>
         </div>
         <aside class="hero-panel" aria-label="Aperçu visuel de la connectivité">
+          <div class="hero-bg-decor" aria-hidden="true">
+            <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 200 Q100 100 200 200 T400 200" stroke="currentColor" stroke-width="1"/>
+              <path d="M0 220 Q100 120 200 220 T400 220" stroke="currentColor" stroke-width="1"/>
+              <path d="M0 240 Q100 140 200 240 T400 240" stroke="currentColor" stroke-width="1"/>
+              <circle cx="120" cy="180" r="3" fill="currentColor"/>
+              <circle cx="280" cy="200" r="3" fill="currentColor"/>
+              <circle cx="350" cy="220" r="3" fill="currentColor"/>
+            </svg>
+          </div>
           <div class="panel-card">
             <div class="panel-top">
               <span>Fibre · Mobile · Data center · VPN</span>
@@ -534,11 +578,36 @@
 
     <div class="trust-band" aria-label="Bandeau de confiance">
       <div class="container trust-grid">
-        <div>Fibre optique dédiée</div>
-        <div>Réseaux mobiles 4G/5G</div>
-        <div>Data center & cloud</div>
-        <div>VPN & connectivité internationale</div>
-        <div>Téléphonie & collaboration</div>
+        <div class="trust-item">
+          <span class="trust-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4l3-9 3 18 3-9h4"/></svg>
+          </span>
+          Fibre optique dédiée
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 12h8"/><path d="M12 8v8"/></svg>
+          </span>
+          Réseaux mobiles 4G/5G
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          </span>
+          Data center & cloud
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </span>
+          VPN & connectivité internationale
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </span>
+          Téléphonie & collaboration
+        </div>
       </div>
     </div>
 
@@ -553,7 +622,14 @@
         </div>
         <div class="services-grid">
           <article class="card featured">
-            <small>Offre phare</small>
+            <div class="card-header">
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 12h4l3-9 3 18 3-9h4"/>
+                </svg>
+              </span>
+              <small>Offre phare</small>
+            </div>
             <h3>Fibre optique FTTO et connectivité haut débit pour sites professionnels.</h3>
             <p>Des liaisons fibre optique dédiées avec engagement de disponibilité, symétrie parfaite et qualité de service pour les entreprises multi-sites.</p>
             <div class="bullet-list">
@@ -563,9 +639,31 @@
             </div>
           </article>
           <article class="card">
-            <small>Expertise</small>
+            <div class="card-header">
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="4" y="4" width="16" height="16" rx="2"/>
+                  <path d="M8 12h8"/><path d="M12 8v8"/>
+                </svg>
+              </span>
+              <small>Expertise</small>
+            </div>
             <h3>Réseaux mobiles 4G/5G & IoT</h3>
             <p>Forfaits mobile entreprise, M2M, IoT, objets connectés et gestion de flotte avec une couverture étendue et prioritaire.</p>
+          </article>
+          <article class="card">
+            <div class="card-header">
+              <span class="card-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                </svg>
+              </span>
+              <small>Expertise</small>
+            </div>
+            <h3>Data center, cloud & VPN d'entreprise</h3>
+            <p>Hébergement sécurisé, cloud privé, VPN MPLS/Layer 2 et solutions de continuité d'activité pour infrastructures critiques.</p>
           </article>
           <article class="card">
             <small>Expertise</small>
@@ -588,14 +686,34 @@
         <div class="proof-grid">
           <article class="card case-card">
             <div>
-              <small>Cas client mis en avant</small>
+              <div class="card-header">
+                <span class="card-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                </span>
+                <small>Cas client mis en avant</small>
+              </div>
               <h3>Migration fibre optique d’un groupe de 45 agences avec bascule SD-WAN et sécurisation des flux.</h3>
               <p>Un déploiement mené en 6 semaines : remplacement des liaisons ADSL par de la fibre FTTO, mise en place d’un VPN MPLS,  gestion centralisée et supervision temps réel.</p>
             </div>
             <div class="impact">
-              <div class="mini"><strong>+65%</strong><span style="display:block;color:var(--color-text-muted);font-size:var(--text-sm);">débit descendant</span></div>
-              <div class="mini"><strong>-40%</strong><span style="display:block;color:var(--color-text-muted);font-size:var(--text-sm);">coût de connectivité</span></div>
-              <div class="mini"><strong>99,9%</strong><span style="display:block;color:var(--color-text-muted);font-size:var(--text-sm);">disponibilité réseau</span></div>
+              <div class="mini">
+                <span class="stat-icon" aria-hidden="true" style="width:28px;height:28px;border-radius:8px;margin-bottom:.35rem;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                </span>
+                <strong>+65%</strong><span style="display:block;color:var(--color-text-muted);font-size:var(--text-sm);">débit descendant</span>
+              </div>
+              <div class="mini">
+                <span class="stat-icon" aria-hidden="true" style="width:28px;height:28px;border-radius:8px;margin-bottom:.35rem;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </span>
+                <strong>-40%</strong><span style="display:block;color:var(--color-text-muted);font-size:var(--text-sm);">coût de connectivité</span>
+              </div>
+              <div class="mini">
+                <span class="stat-icon" aria-hidden="true" style="width:28px;height:28px;border-radius:8px;margin-bottom:.35rem;">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </span>
+                <strong>99,9%</strong><span style="display:block;color:var(--color-text-muted);font-size:var(--text-sm);">disponibilité réseau</span>
+              </div>
             </div>
           </article>
           <article class="card">
@@ -624,10 +742,30 @@
           <p>Sunulink Telecom conçoit des infrastructures sur-mesure pour chaque typologie d’organisation : connectivité haut débit, sécurisation des échanges et accompagnement à la transformation réseau.</p>
         </div>
         <div class="sectors">
-          <article class="sector"><h3>Administrations</h3><p>Réseau sécurisé, souveraineté des données, continuité de service.</p></article>
-          <article class="sector"><h3>Grandes entreprises</h3><p>Fibre multi-sites, VPN, convergence fixe-mobile.</p></article>
-          <article class="sector"><h3>PME & ETI</h3><p>Forfaits mobile pro, fibre, téléphonie cloud.</p></article>
-          <article class="sector"><h3>Santé & éducation</h3><p>Connectivité critique, IoT, hébergement sécurisé.</p></article>
+          <article class="sector">
+            <span class="sector-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </span>
+            <h3>Administrations</h3><p>Réseau sécurisé, souveraineté des données, continuité de service.</p>
+          </article>
+          <article class="sector">
+            <span class="sector-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            </span>
+            <h3>Grandes entreprises</h3><p>Fibre multi-sites, VPN, convergence fixe-mobile.</p>
+          </article>
+          <article class="sector">
+            <span class="sector-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>
+            </span>
+            <h3>PME & ETI</h3><p>Forfaits mobile pro, fibre, téléphonie cloud.</p>
+          </article>
+          <article class="sector">
+            <span class="sector-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </span>
+            <h3>Santé & éducation</h3><p>Connectivité critique, IoT, hébergement sécurisé.</p>
+          </article>
         </div>
       </div>
     </section>
