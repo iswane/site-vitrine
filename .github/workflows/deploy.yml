@@ -29,9 +29,9 @@ jobs:
         with:
           script: |
             try {
-              await github.rest.pages.getPages({ owner: context.repo.owner, repo: context.repo.repo });
+              await github.rest.repos.getPages({ owner: context.repo.owner, repo: context.repo.repo });
             } catch {
-              await github.rest.pages.createPages({
+              await github.rest.repos.createPagesSite({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
                 build_type: "workflow"
